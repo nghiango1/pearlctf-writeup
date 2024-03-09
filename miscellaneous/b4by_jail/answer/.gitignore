@@ -1,0 +1,17 @@
+# Ignore build artifacts
+*.o
+*.exe
+
+# Ignore the cland .cache directory
+.cache/
+
+# Ignore the build directory
+build/
+dist/
+
+# Ignore editor-specific temporary files
+*~
+*.swp
+
+# Ignore macOS-specific files
+.DS_Store
