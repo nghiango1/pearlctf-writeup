@@ -1,3 +1,4 @@
+import string
 import time
 import socket
 
@@ -33,8 +34,8 @@ class Netcat:
 
 
 def crafted(f=None, position=None):
-    result = '\'"'
-    result += str(f) + '"\'\n'
+    result = '"'
+    result += f + '"\n'
     return result
 
 
@@ -167,16 +168,31 @@ black_list = black_list.split('\n')
 sample = ""
 white_list = []
 
-import string
 
 for i in range(580):
     valid = chr(int(i))
     if str(i) not in black_list:
         white_list += valid
-        if valid in string.printable:
-            print(chr(int(i)), end='')
     else:
         sample += valid
 
-print()
-print(sample)
+
+flag = "wow wow"
+
+white_list = " \"\'()+-.=?V\\`achqrw|"
+black_list = "!#$%&*,/0123456789:;<>@ABCDEFGHIJKLMNOPQRSTUWXYZ[]^_bdefgijklmnopstuvxyz{}~²³¹º¼½¾ĲĳĿŀŉſǄǅǆǇǈǉǊǋǌǱǲǳ``"
+
+needed = "flag"
+
+a = r"'chr('na')'"
+try:
+    print(eval(a))
+    print(a == "\'flag\'")
+    try:
+        print(eval(eval(a)))
+    except Exception as e:
+        print(e)
+        pass
+except Exception as e:
+    print(e)
+    pass
