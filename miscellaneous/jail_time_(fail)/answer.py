@@ -184,7 +184,10 @@ black_list = "!#$%&*,/0123456789:;<>@ABCDEFGHIJKLMNOPQRSTUWXYZ[]^_bdefgijklmnops
 
 needed = "flag"
 
-a = r"'chr('na')'"
+a = ('a', 'c')
+print(a)
+
+a = r"'a = (\'a\') + a'"
 try:
     print(eval(a))
     print(a == "\'flag\'")
