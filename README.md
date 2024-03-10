@@ -57,3 +57,15 @@ Tools used:
 `osint/lost_lette_(fail)/`: I think I will need a native friend for this one
 
 `web/learn_HTTP_(fail)/`: Can't bypass admin check to get flag
+
+## Final score
+
+> More can be found here [ylsolo team profile](https://play.pearlctf.in/teams/594)
+
+- Team placement: 65th, with 1205 points (thank nap =)!)
+
+    ![image](https://github.com/nghiango1/pearlctf-writeup/assets/31164703/488223a5-f2f5-4891-b54b-009e929604fd)
+
+- Point distribution:
+
+    ![image](https://github.com/nghiango1/pearlctf-writeup/assets/31164703/9c00ec85-eb67-4444-acf0-50b53a041131)
